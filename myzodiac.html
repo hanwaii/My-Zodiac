@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My Zodiac</title>
+	<script type="text/javascript">
+		function zodCalculate () {
+			var eZ;
+			var mhbMMyear = document.getElementById('mmYear').value;
+			var engBCdate = new Date(document.getElementById('engDate').value);
+			var engBday = engBCdate.getDay();
+			var engBdate = engBCdate.getDate();
+			var engBmonth = engBCdate.getMonth();
+			var engByear = engBCdate.getFullYear();
+
+			document.getElementById('zodAns').style.display	= "block";
+
+			if (engByear%12 == 0) {
+				document.getElementById('chz').innerHTML = "Monkey";
+			} else if (engByear%12 == 1) {
+				document.getElementById('chz').innerHTML = "Rooster";
+			} else if (engByear%12 == 2) {
+				document.getElementById('chz').innerHTML = "Dog";
+			} else if (engByear%12 == 3) {
+				document.getElementById('chz').innerHTML = "Pig";
+			} else if (engByear%12 == 4) {
+				document.getElementById('chz').innerHTML = "Rat";
+			} else if (engByear%12 == 5) {
+				document.getElementById('chz').innerHTML = "Ox";
+			} else if (engByear%12 == 6) {
+				document.getElementById('chz').innerHTML = "Tiger";
+			} else if (engByear%12 == 7) {
+				document.getElementById('chz').innerHTML = "Rabbit";
+			} else if (engByear%12 == 8) {
+				document.getElementById('chz').innerHTML = "Dragon";
+			} else if (engByear%12 == 9) {
+				document.getElementById('chz').innerHTML = "Snake";
+			} else if (engByear%12 == 10) {
+				document.getElementById('chz').innerHTML = "Horse";
+			} else if (engByear%12 == 11) {
+				document.getElementById('chz').innerHTML = "Goat";
+			}
+
+			if (engBmonth == 0) {
+				if (engBdate <= 20) {
+					document.getElementById('enz').innerHTML = "Capricorn";
+				} else if (engBdate > 20) {
+					document.getElementById('enz').innerHTML = "Aquarius";
+				}
+			} else if (engBmonth == 1) {
+				if (engBdate <= 18) {
+					document.getElementById('enz').innerHTML = "Aquarius";
+				} else if (engBdate > 19) {
+					document.getElementById('enz').innerHTML = "Pisces";
+				}
+			} else if (engBmonth == 2) {
+				if (engBdate <= 20) {
+					document.getElementById('enz').innerHTML = "Pisces";
+				} else if (engBdate > 20) {
+					document.getElementById('enz').innerHTML = "Aries";
+				}
+			} else if (engBmonth == 3) {
+				if (engBdate <= 19) {
+					document.getElementById('enz').innerHTML = "Aries";
+				} else if (engBdate > 19) {
+					document.getElementById('enz').innerHTML = "Taurus";
+				}
+			} else if (engBmonth == 4) {
+				if (engBdate <= 20) {
+					document.getElementById('enz').innerHTML = "Taurus";
+				} else if (engBdate > 20) {
+					document.getElementById('enz').innerHTML = "Gemini";
+				}
+			} else if (engBmonth == 5) {
+				if (engBdate <= 21) {
+					document.getElementById('enz').innerHTML = "Gemini";
+				} else if (engBdate > 21) {
+					document.getElementById('enz').innerHTML = "Cancer";
+				}
+			} else if (engBmonth == 6) {
+				if (engBdate <= 22) {
+					document.getElementById('enz').innerHTML = "Cancer";
+				} else if (engBdate > 22) {
+					document.getElementById('enz').innerHTML = "Leo";
+				}
+			} else if (engBmonth == 7) {
+				if (engBdate <= 23) {
+					document.getElementById('enz').innerHTML = "Leo";
+				} else if (engBdate > 23) {
+					document.getElementById('enz').innerHTML = "Virgo";
+				}
+			} else if (engBmonth == 8) {
+				if (engBdate <= 22) {
+					document.getElementById('enz').innerHTML = "Virgo";
+				} else if (engBdate > 22) {
+					document.getElementById('enz').innerHTML = "Libra";
+				}
+			} else if (engBmonth == 9) {
+				if (engBdate <= 24) {
+					document.getElementById('enz').innerHTML = "Libra";
+				} else if (engBdate > 24) {
+					document.getElementById('enz').innerHTML = "Scorpio";
+				}
+			} else if (engBmonth == 10) {
+				if (engBdate <= 22) {
+					document.getElementById('enz').innerHTML = "Scorpio";
+				} else if (engBdate > 22) {
+					document.getElementById('enz').innerHTML = "Sagittarius";
+				}
+			} else if (engBmonth == 11) {
+				if (engBdate <= 22) {
+					document.getElementById('enz').innerHTML = "Sagittarius";
+				} else if (engBdate > 22) {
+					document.getElementById('enz').innerHTML = "Capricorn";
+				}
+			}
+
+			if (mhbMMyear%7 == 0) {
+				if (engBday == "0") {
+					document.getElementById('mmMHB').innerHTML = "ပုတိ";
+				} else if (engBday == "1") {
+					document.getElementById('mmMHB').innerHTML = "သိုက်";
+				} else if (engBday == "2") {
+					document.getElementById('mmMHB').innerHTML = "မရဏ";
+				} else if (engBday == "3") {
+					document.getElementById('mmMHB').innerHTML = "အဓိပတိ";
+				} else if (engBday == "4") {
+					document.getElementById('mmMHB').innerHTML = "ရာဇ";
+				} else if (engBday == "5") {
+					document.getElementById('mmMHB').innerHTML = "အထွန်";
+				} else if (engBday == "6") {
+					document.getElementById('mmMHB').innerHTML = " ဘင်္ဂ";
+				} 
+			} else if (mhbMMyear%7 == 1) {
+				if (engBday == "1") {
+					document.getElementById('mmMHB').innerHTML = "ပုတိ";
+				} else if (engBday == "2") {
+					document.getElementById('mmMHB').innerHTML = "သိုက်";
+				} else if (engBday == "3") {
+					document.getElementById('mmMHB').innerHTML = "မရဏ";
+				} else if (engBday == "4") {
+					document.getElementById('mmMHB').innerHTML = "အဓိပတိ";
+				} else if (engBday == "5") {
+					document.getElementById('mmMHB').innerHTML = "ရာဇ";
+				} else if (engBday == "6") {
+					document.getElementById('mmMHB').innerHTML = "အထွန်";
+				} else if (engBday == "0") {
+					document.getElementById('mmMHB').innerHTML = " ဘင်္ဂ";
+				} 
+			} else if (mhbMMyear%7 == 2) {
+				if (engBday == "2") {
+					document.getElementById('mmMHB').innerHTML = "ပုတိ";
+				} else if (engBday == "3") {
+					document.getElementById('mmMHB').innerHTML = "သိုက်";
+				} else if (engBday == "4") {
+					document.getElementById('mmMHB').innerHTML = "မရဏ";
+				} else if (engBday == "5") {
+					document.getElementById('mmMHB').innerHTML = "အဓိပတိ";
+				} else if (engBday == "6") {
+					document.getElementById('mmMHB').innerHTML = "ရာဇ";
+				} else if (engBday == "0") {
+					document.getElementById('mmMHB').innerHTML = "အထွန်";
+				} else if (engBday == "1") {
+					document.getElementById('mmMHB').innerHTML = " ဘင်္ဂ";
+				} 
+			} else if (mhbMMyear%7 == 3) {
+				if (engBday == "3") {
+					document.getElementById('mmMHB').innerHTML = "ပုတိ";
+				} else if (engBday == "4") {
+					document.getElementById('mmMHB').innerHTML = "သိုက်";
+				} else if (engBday == "5") {
+					document.getElementById('mmMHB').innerHTML = "မရဏ";
+				} else if (engBday == "6") {
+					document.getElementById('mmMHB').innerHTML = "အဓိပတိ";
+				} else if (engBday == "0") {
+					document.getElementById('mmMHB').innerHTML = "ရာဇ";
+				} else if (engBday == "1") {
+					document.getElementById('mmMHB').innerHTML = "အထွန်";
+				} else if (engBday == "2") {
+					document.getElementById('mmMHB').innerHTML = " ဘင်္ဂ";
+				} 
+			} else if (mhbMMyear%7 == 4) {
+				if (engBday == "4") {
+					document.getElementById('mmMHB').innerHTML = "ပုတိ";
+				} else if (engBday == "5") {
+					document.getElementById('mmMHB').innerHTML = "သိုက်";
+				} else if (engBday == "6") {
+					document.getElementById('mmMHB').innerHTML = "မရဏ";
+				} else if (engBday == "0") {
+					document.getElementById('mmMHB').innerHTML = "အဓိပတိ";
+				} else if (engBday == "1") {
+					document.getElementById('mmMHB').innerHTML = "ရာဇ";
+				} else if (engBday == "2") {
+					document.getElementById('mmMHB').innerHTML = "အထွန်";
+				} else if (engBday == "3") {
+					document.getElementById('mmMHB').innerHTML = " ဘင်္ဂ";
+				} 
+			} else if (mhbMMyear%7 == 5) {
+				if (engBday == "5") {
+					document.getElementById('mmMHB').innerHTML = "ပုတိ";
+				} else if (engBday == "6") {
+					document.getElementById('mmMHB').innerHTML = "သိုက်";
+				} else if (engBday == "0") {
+					document.getElementById('mmMHB').innerHTML = "မရဏ";
+				} else if (engBday == "1") {
+					document.getElementById('mmMHB').innerHTML = "အဓိပတိ";
+				} else if (engBday == "2") {
+					document.getElementById('mmMHB').innerHTML = "ရာဇ";
+				} else if (engBday == "3") {
+					document.getElementById('mmMHB').innerHTML = "အထွန်";
+				} else if (engBday == "4") {
+					document.getElementById('mmMHB').innerHTML = " ဘင်္ဂ";
+				} 
+			} else if (mhbMMyear%7 == 6) {
+				if (engBday == "6") {
+					document.getElementById('mmMHB').innerHTML = "ပုတိ";
+				} else if (engBday == "0") {
+					document.getElementById('mmMHB').innerHTML = "သိုက်";
+				} else if (engBday == "1") {
+					document.getElementById('mmMHB').innerHTML = "မရဏ";
+				} else if (engBday == "2") {
+					document.getElementById('mmMHB').innerHTML = "အဓိပတိ";
+				} else if (engBday == "3") {
+					document.getElementById('mmMHB').innerHTML = "ရာဇ";
+				} else if (engBday == "4") {
+					document.getElementById('mmMHB').innerHTML = "အထွန်";
+				} else if (engBday == "5") {
+					document.getElementById('mmMHB').innerHTML = " ဘင်္ဂ";
+				} 
+			}	
+		}
+	</script>
+	<style type="text/css">
+		#zodAns {
+			display: none;
+			text-align: center;
+		}
+		#zod {
+			text-align: center;
+		}
+		h1 {
+			text-align: center;
+			size: 10px;
+		}
+		input {
+			width: 30%;
+		}
+		span {
+			font-weight: bold;
+			color: #3700B3;
+		}
+	</style>
+</head>
+<body>
+	<h1>The Zodiac</h1>		
+	</div>
+	<div id="zod">
+		<p>Select your birth Date!</p>
+		<input type="date" id="engDate" onchange="daycal()" placeholder="Birth Date"><br><br>
+		<input type="number" id="mmYear" placeholder="Myanmar Year"><br><br>
+		<button onclick="zodCalculate()">Calculate</button>
+	</div>
+	<p id="zodAns">
+		As chinese zodiac,<br>
+		your sign is <span id="chz"></span>.<br><br>
+		As Western astrology,<br>
+		your zodiac sign is <span id="enz"></span>.<br><br>
+		As Myanmar Maha Board,<br>
+		your maha board sign is <span id="mmMHB"></span>.<br>
+	</p>
+</body>
+</html>
